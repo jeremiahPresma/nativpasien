@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>My App | Halaman Utama</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col-4">
+                    <h3>Tambah Data Pasien</h3>
+                    <form action="koneksi.php" method="POST">
+                        <div class="form-group">
+                            <label for="idPasien">ID Pasien</label>
+                            <input tyle="text" class="form-control mb-3" name="idPasien" placeholder="ID Pasien">
+                        </div>
+                        <div class="form-group">
+                            <label for="nmPasien">Nama Pasien</label>
+                            <input tyle="text" class="form-control mb-3" name="nmPasien" placeholder="Nama Pasien">
+                        </div>
+                        <div class="form-group">
+                            <label for="jk">Jenis Kelamin</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="jk" value="Perempuan">Perempuan
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="jk" value="Laki-Laki">Laki-Laki
+                            </div>
+                        </div>
+                        <div class="form-group nt-3">
+                            <label for="alamat">Alamat</label>
+                            <textarea name="alamat" id="alamat" cols="5" rows="3" placeholder="Alamat" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group nt-3">
+                            <input type="submit" name="simpan" value="Simpan" class="form-contol btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+
+
